@@ -1,15 +1,15 @@
-==100423== Memcheck, a memory error detector
-==100423== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==100423== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==100423== Command: Resultados/YuriMutz/software/prog Resultados/YuriMutz/software/Casos/1
-==100423== Parent PID: 100422
-==100423== 
-==100423== 
-==100423== HEAP SUMMARY:
-==100423==     in use at exit: 0 bytes in 0 blocks
-==100423==   total heap usage: 33 allocs, 33 frees, 10,396 bytes allocated
-==100423== 
-==100423== All heap blocks were freed -- no leaks are possible
-==100423== 
-==100423== For lists of detected and suppressed errors, rerun with: -s
-==100423== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==285266== Memcheck, a memory error detector
+==285266== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==285266== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==285266== Command: Resultados/YuriMutz/software/prog Resultados/YuriMutz/software/Casos/1
+==285266== Parent PID: 285265
+==285266== 
+==285266== 
+==285266== HEAP SUMMARY:
+==285266==     in use at exit: 0 bytes in 0 blocks
+==285266==   total heap usage: 33 allocs, 33 frees, 10,396 bytes allocated
+==285266== 
+==285266== All heap blocks were freed -- no leaks are possible
+==285266== 
+==285266== For lists of detected and suppressed errors, rerun with: -s
+==285266== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

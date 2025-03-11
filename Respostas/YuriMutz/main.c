@@ -141,9 +141,13 @@ int main(){
 
                                     if(getTempoDispTec(retornaTecBanco(bancoTec, j)) >= getTempoEstimadoTicket(getTicketNaFila(filaTicket, i))){
 
-                                        finalizaTicket(getTicketNaFila(filaTicket, i));
+                                        Ticket *tkAux = getTicketNaFila(filaTicket, i);
 
-                                        atualizaTemposTec(retornaTecBanco(bancoTec, j), getTempoEstimadoTicket(getTicketNaFila(filaTicket, i)));
+                                        finalizaTicket(tkAux);
+
+                                        int temp = getTempoEstimadoTicket(tkAux);
+
+                                        atualizaTemposTec(retornaTecBanco(bancoTec, j), getTempoEstimadoTicket(tkAux));
                                         
                                         atualizaSequenciaTec(bancoTec, j);
 

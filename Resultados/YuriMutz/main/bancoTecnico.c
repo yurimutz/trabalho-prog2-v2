@@ -141,24 +141,15 @@ void atualizaSequenciaTec(bancoTec *banco, int indice){
 
     Tecnico *tecAux;
 
-    tecAux = banco->dado[0];
+    tecAux = banco->dado[indice];
 
-    for(int i = 0; i < banco->tamAtual - 1; i++){
+    for(int i = indice; i < banco->tamAtual - 1; i++){
 
         banco->dado[i] = banco->dado[i+1];
 
     }
 
     banco->dado[banco->tamAtual - 1] = tecAux;
-
-    // Tecnico *tecAux;
-
-    // tecAux = banco->dado[indice];
-
-    // banco->dado[indice] = banco->dado[banco->tamAtual - 1];
-
-    // banco->dado[banco->tamAtual - 1] = tecAux;
-
 
 }
 
