@@ -23,6 +23,8 @@ char *retornaNomeUser(Usuario *user);
 
 void desalocaUsuario(Usuario *user);
 
+int comparaUser(const void *user1, const void *user2);
+
 void notificaUsuario(Usuario *user);
 
 #endif

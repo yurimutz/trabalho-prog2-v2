@@ -182,6 +182,25 @@ void desalocaTecnico(Tecnico *tec){
 
 }
 
+int comparaTec(const void *tec1, const void *tec2){
+
+    Tecnico *tec1aux = *(Tecnico**)tec1; 
+    Tecnico *tec2aux = *(Tecnico**)tec2;
+
+    //printf("oi");
+
+    if(tec1aux->tempTrabalhado != tec2aux->tempTrabalhado){
+
+        return tec2aux->tempTrabalhado - tec1aux->tempTrabalhado;
+
+    } else {
+
+        return strcmp(tec1aux->nome, tec2aux->nome);
+
+    }
+
+}
+
 void notificaTecnico(Tecnico *tec){
 
     printf("--------------------\n");

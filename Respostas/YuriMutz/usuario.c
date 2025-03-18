@@ -128,7 +128,6 @@ char *getCPFUser(Usuario *user){
 void atualizaNumTickets(Usuario *user){
 
     user->numTickets += 1;
-    //printf("atualizei %d\n", user->numTickets);
 
 }
 
@@ -150,6 +149,23 @@ void desalocaUsuario(Usuario *user){
 
 }
 
+int comparaUser(const void *user1, const void *user2){
+
+    Usuario *user1aux = *(Usuario**)user1; 
+    Usuario *user2aux = *(Usuario**)user2;
+
+    if(user1aux->numTickets != user2aux->numTickets){
+
+        return user2aux->numTickets - user1aux->numTickets;
+
+    } else {
+
+        return strcmp(user1aux->nome, user2aux->nome);
+
+    }
+
+}
+
 void notificaUsuario(Usuario *user){
 
     printf("--------------------\n");
@@ -160,6 +176,5 @@ void notificaUsuario(Usuario *user){
     printf("- Genero: %s\n", user->genero);
     printf("- Setor: %s\n", user->setor);
     printf("- Tickets solicitados: %d\n", user->numTickets);
-    //printf("--------------------\n");
 
 }

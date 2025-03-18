@@ -23,6 +23,8 @@ void atualizaTemposTec(Tecnico *tec, int tempo);
 
 void desalocaTecnico(Tecnico *tec);
 
+int comparaTec(const void *tec1, const void *tec2);
+
 void notificaTecnico(Tecnico *tec);
 
 #endif

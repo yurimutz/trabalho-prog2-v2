@@ -129,6 +129,9 @@ void notificaRankingTec(bancoTec *banco){
 
     }
 
+    
+    //qsort(banco->seq, banco->tamAtual, sizeof(Tecnico*), comparaTec);
+
     notificaBancoTecnico(banco);
 
 }
