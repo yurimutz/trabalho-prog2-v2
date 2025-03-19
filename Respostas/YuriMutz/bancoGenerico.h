@@ -39,5 +39,6 @@ void desalocaBanco(bancoGen *banco);
 
 void notificaBanco(bancoGen *banco);
 
+void printaRanking(bancoGen *banco);
 
 #endif

@@ -158,15 +158,15 @@ void notificaRanking(bancoGen *banco){
 
     if(banco->tipo == 'T'){
 
-        qsort(banco->seq, banco->tamAtual, sizeof(Tecnico*), comparaTec);
+        qsort(banco->dado, banco->tamAtual, sizeof(Tecnico*), comparaTec);
 
-        notificaBanco(banco);
+        printaRanking(banco);
 
     } else if(banco->tipo == 'U'){\
     
-        qsort(banco->seq, banco->tamAtual, sizeof(Usuario*), comparaUser);
+        qsort(banco->dado, banco->tamAtual, sizeof(Usuario*), comparaUser);
 
-        notificaBanco(banco);
+        printaRanking(banco);
         
     }
 
@@ -257,6 +257,16 @@ void notificaBanco(bancoGen *banco){
     for(int i = 0; i < banco->tamAtual; i++){
 
         banco->notifica(banco->seq[i]);
+
+    }
+
+}
+
+void printaRanking(bancoGen *banco){
+
+    for(int i = 0; i < banco->tamAtual; i++){
+
+        banco->notifica(banco->dado[i]);
 
     }
 
